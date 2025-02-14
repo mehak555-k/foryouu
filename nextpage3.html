@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Love</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            background-color: rgb(236, 75, 121);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+
+        .extra-content {
+            margin-top: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 600px;
+        }
+
+        /* Next Button */
+        .next-button {
+            margin-top: 20px;
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+            background-color: #e63950;
+            border: none;
+            text-decoration: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+
+        .next-button:hover {
+            background-color: #c1273b;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="greeting"></h1>
+   
+    <div class="extra-content">
+        <p>
+            🌟 A Love Story Like No Other 🌟
+            💕 From the moment we met in school 🏫, I knew you were special ✨.
+            💖 We have been together for so long, growing together like two vines 🌿 intertwined in love.
+            
+            🎀 You, My Aditi 🎀
+            
+            🥰 You're my chubby, cute, and loving girl 🥺💓.
+            👩‍❤️‍👨 Every moment with you is precious and filled with warmth 🌞.
+            😍 Your beauty isn't just in your face but in your heart 💖.
+            🙈 Your smile melts my heart like sunshine on snow ❄️☀️.
+            
+            💌 Our Beautiful Memories 💌
+            
+            🦁 Remember our trip to the zoo? 🐘🐒 We giggled like kids! 😆
+            🚗 Our car drives were full of laughter and fun! 🎶💨
+            🎬 Watching movies together, sharing popcorn 🍿 and whispers 🗣️💞.
+            ☕ Sipping coffee in cozy cafés, lost in each other's eyes 👀❤️.
+            🛍️ Walking through malls, hand in hand, making memories 👫.
+            
+            💑 Why I Love You 💑
+            
+            💞 You understand me like no one else ever could 🫂.
+            🤗 Your hugs heal my soul, making all worries disappear 🌈.
+            🫶 You are my best friend and my love, all in one 🌟.
+            🎉 With you, even the smallest moments feel magical ✨.
+            💖 You bring out the best version of me, and I adore you for that!
+            
+            🎊 Our Forever Together 🎊
+            
+            🛤️ Life’s journey is long, and I want to walk it with you forever 🚶‍♂️🚶‍♀️.
+            💍 One day, we will have our dream wedding and a beautiful life 🏡.
+            💑 Until then, I promise to love you, cherish you, and stand by you always! 💖
+            
+            🌹 I Love You, Aditi! 🌹
+            
+            💘 Forever yours, 💘
+            💞Your Rudransh 💞
+            
+            
+            
+        </p>
+    </div>
+
+   
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get("name") || "Cutie";
+        document.getElementById("greeting").innerText = `Hello ${name} (Cutie)`;
+
+        
+    </script>
+    <a href="nextpage4.html" class="next-button">Next</a>
+</body>
+</html>

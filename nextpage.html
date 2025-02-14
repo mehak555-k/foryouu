@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Love</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: pink;
+        }
+
+        .container {
+            position: relative;
+            padding: 20px;
+            border-radius: 10px;
+            width: 350px;
+            background: white;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .heart-container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 5px;
+            clip-path: url(#heart-shape);
+            overflow: hidden;
+        }
+
+        .heart-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .message {
+            font-size: 20px;
+            font-style: italic;
+            margin-top: 20px;
+        }
+
+        .heart-button {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: white;
+            background: red;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .heart-button:hover {
+            background: darkred;
+        }
+    </style>
+</head>
+<body>
+    <svg width="0" height="0">
+        <defs>
+            <clipPath id="heart-shape" clipPathUnits="objectBoundingBox">
+                <path d="M 0.5 0.9 C 0.2 0.7, 0 0.5, 0 0.3 C 0 0.1, 0.2 0, 0.5 0.2 C 0.8 0, 1 0.1, 1 0.3 C 1 0.5, 0.8 0.7, 0.5 0.9 Z" />
+            </clipPath>
+        </defs>
+    </svg>
+    
+    <div class="container">
+        <div class="title">❤️ Me and You ❤️</div>
+        <div class="heart-container">
+            <img src="image.png" alt="Puzzle Piece 1"> 
+            <img src="image copy.png" alt="Puzzle Piece 2"> 
+            <img src="image copy 2.png" alt="Puzzle Piece 3"> 
+            <img src="image copy 3.png" alt="Puzzle Piece 4"> 
+        </div>
+        <div class="message">Happy Valentine's Day</div>
+    </div>
+    <a href="nextpage2.html" class="heart-button">Next</a>
+</body>
+</html>

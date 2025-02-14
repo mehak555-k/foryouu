@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Love</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-image: url(image\ copy\ 4.png);
+            background-repeat: no-repeat;
+           background-color: beige;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            position: relative;
+            padding: 20px;
+            border: 2px solid #d32f2f;
+            border-radius: 10px;
+            width: 300px;
+            background: white;
+        }
+
+        .date {
+            font-size: 48px;
+            color: #b71c1c;
+            font-weight: bold;
+        }
+
+        .date span {
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        .heart-container {
+            position: relative;
+            margin: 20px auto;
+        }
+
+        .heart-container .text-heart {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .blurred-heart {
+            width: 100px;
+            height: 90px;
+            background: red;
+            position: relative;
+            margin: auto;
+            transform: rotate(-45deg);
+            box-shadow: 0 0 15px red;
+        }
+
+        .blurred-heart:before,
+        .blurred-heart:after {
+            content: "";
+            width: 100px;
+            height: 90px;
+            background: red;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .blurred-heart:before {
+            top: -50px;
+            left: 0;
+        }
+
+        .blurred-heart:after {
+            left: 50px;
+            top: 0;
+        }
+
+        .details {
+            font-size: 16px;
+            margin-top: 20px;
+            color: #b71c1c;
+        }
+
+        .heart-button {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: white;
+            background: red;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .heart-button:hover {
+            background: darkred;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="date">14 · 02 <span>Happy Valentine's Day </span></div>
+        <br>
+        <div class="heart-container">
+            <div class="blurred-heart"></div>
+        </div>
+        <div class="details">
+            <br>
+            <p><strong>Hey</strong> Love</p>
+            <p><strong>I love you</strong> Thanks for always<br>being there for me</p>
+        </div>
+    </div>
+    <a href="nextpage.html" class="heart-button">Next</a>
+</body>
+</html>
